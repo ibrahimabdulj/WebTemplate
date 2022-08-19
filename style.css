@@ -1,0 +1,193 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ 
+ .attribution {
+     /* position: absolute; */
+     bottom: 0;
+     font-size: .63rem;
+     text-align: center;
+     margin: 0 auto;
+     display: block;
+     width: 100%
+ }
+ 
+ .attribution a {
+     color: hsl(228, 45%, 44%);
+ }
+ 
+ body {
+     background-color: hsl(0, 0%, 98%);
+     font-size: 1.25rem;
+     position: relative;
+ }
+ 
+ .frame {
+     display: flex;
+     height: 95vh;
+     justify-content: space-between;
+ }
+ 
+ .firsthalf {
+     width: 45%;
+     height: 90vh;
+ }
+ 
+ .sechalf {
+     /* margin-top: 1.25rem; */
+     display: flex-end;
+     width: 45%;
+     height: 98vh;
+ }
+ 
+ header {
+     display: flex;
+     padding: 0.9375rem;
+     align-items: center;
+     justify-content: space-between;
+ }
+ 
+ .nav,
+ .action-btns {
+     display: flex;
+     column-gap: 1.875rem;
+ }
+ 
+ li {
+     list-style: none;
+ }
+ 
+ nav {
+     display: flex;
+     align-items: center;
+     column-gap: 1.5625rem;
+ }
+ 
+ .features:hover .dropdown,
+ .dropdown:hover {
+     display: block;
+     cursor: pointer;
+ }
+ 
+ .features {
+     position: relative;
+ }
+ 
+ .company:hover .dropdown {
+     display: block;
+     cursor: pointer;
+ }
+ 
+ .company {
+     position: relative;
+ }
+ 
+ .dropdown {
+     display: none;
+     position: absolute;
+     background-color: hsl(0, 0%, 98%);
+     padding: 0.9375rem;
+     border-radius: 0.625em;
+     top: 1.25em;
+     left: -1.25em;
+     z-index: 2;
+     width: max-content;
+     text-align: left;
+ }
+ 
+ a {
+     color: inherit;
+ }
+ 
+ button {
+     padding: 2vh;
+     border-radius: 1rem;
+ }
+ 
+ ul.action-btns {
+     padding: 5vh;
+     justify-content: right;
+ }
+ 
+ .emmt {
+     padding-left: 10vw;
+     height: 90%;
+ }
+ 
+ .emmt2 img {
+     margin-top: -0.375;
+     width: 90%;
+     height: 70vh;
+     padding-right: 10vw;
+ }
+ 
+ hr {
+     background-color: aqua;
+ }
+ 
+ h1 {
+     font-size: 4rem;
+ }
+ 
+ .l-more {
+     background-color: black;
+     margin: 4rem;
+     color: white;
+ }
+ 
+ .l-more:hover {
+     background-color: white;
+     color: black
+ }
+ 
+ p {
+     width: 80%;
+ }
+ 
+ .img {
+     margin-top: 4.5rem;
+     display: flex;
+     column-gap: 3.125rem;
+ }
+ 
+ a {
+     text-decoration: none;
+ }
+ 
+ a:hover {
+     color: rgb(83, 130, 162);
+ }
+ 
+ button:hover {
+     background-color: black;
+     color: white
+ }
+ 
+ @media screen and (max-width: 720px) {
+     .nav {
+         display: none;
+     }
+     .action-btns {
+         display: none;
+     }
+     .frame {
+         display: flex;
+         flex-direction: column;
+     }
+     P {
+         width: 100%;
+         font-size: small;
+         text-align: center;
+     }
+     h1 {
+         font-size: 4rem;
+     }
+     .ctn h1 {
+         display: flex;
+     }
+     .emmt {
+         justify-content: center;
+     }
+ }
